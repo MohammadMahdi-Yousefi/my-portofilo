@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    gap: 24px;
+  }
+  h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway";
+}
