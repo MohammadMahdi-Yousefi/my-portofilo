@@ -202,6 +202,7 @@ h5 {
   font-weight: 700;
   line-height: 64px;
   color: #fff;
+  font-family: "Raleway", sans-serif;
 }
 
 #hero p {
@@ -211,11 +212,28 @@ h5 {
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#hero p span:first-child {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+}
+
+/* *****
+auto typed styles
+****** */
+
+.cursor {
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
 }
 /*****************
 main section
@@ -266,7 +284,7 @@ about section
   gap: 24px;
 }
 .img-fluid {
-  width: 375px ;
+  width: 375px;
   height: auto;
 }
 .about-content h3 {
