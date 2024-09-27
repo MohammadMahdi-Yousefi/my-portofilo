@@ -44,7 +44,7 @@ mobile_toggle.addEventListener("click", function () {
      }
 
      const writeLoop = async () => {
-       // اوبین توقف قبل ار شروغ کلمه
+       // اولین توقف قبل ار شروغ کلمه
        await sleep(sleepTime );
        while (true) {
          let curword = phrases[curPraseIndex];
@@ -60,7 +60,7 @@ mobile_toggle.addEventListener("click", function () {
          for (let i = curword.length; i > 0; i--) {
            el.innerHTML = curword.substring(0, i - 1);
            // سرعت پاک کردن
-           await sleep(sleepTime * 0.5);
+           await sleep(sleepTime );
          }
          // توقف اول
          await sleep(sleepTime * 2);

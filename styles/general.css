@@ -8,3 +8,9 @@ h4,
 h5 {
   font-family: "Raleway";
 }
+.section{
+  padding: 60px 0;
+}
+.section-title {
+  padding-bottom: 30px;
+}

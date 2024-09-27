@@ -128,11 +128,15 @@ h5 {
 
 /*  footer styles */
 .footer {
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 14px;
-  z-index: 9999;
+  padding: 15px;
   color: #f4f6fd;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 9999;
+  background: #040b14;
 }
 
 /*--------------------------------------------------------------
@@ -224,7 +228,7 @@ auto typed styles
 ****** */
 
 .cursor {
-  animation: blink 1s ease-in-out infinite;
+  animation: blink 0.9s ease-in-out infinite;
 }
 
 @keyframes blink {
@@ -284,7 +288,8 @@ about section
   gap: 24px;
 }
 .img-fluid {
-  width: 375px;
+width: 375px;
+  display: inline-block;
   height: auto;
 }
 .about-content h3 {
@@ -354,4 +359,50 @@ facts section
   font-size: 14px;
   color: #122f57;
   line-height: 1.4;
+}
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+}
+
+/* ********
+skills section
+********* */
+.skills-setion {
+  background-color: #f5f8fd;
+  padding: 60px 30px;
+}
+.skils-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  height: 60px;
+}
+.bars label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+progress {
+  border-radius: 0;
+  height: 10px;
+  width: 100%;
+}
+progress::-webkit-progress-bar {
+  background-color: #dce8f8;
+  border-radius: 0;
+}
+progress::-webkit-progress-value {
+  background-color: #149ddd;
+  border-radius: 0;
 }

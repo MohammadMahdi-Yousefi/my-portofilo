@@ -12,18 +12,23 @@
   .footer {
     display: none;
   }
+  .img-fluid{
+    width: 80%;
+  }
+  .about-section .container {
+    padding: 0 16px;
+  }
   #main {
     margin-left: 0;
   }
-  .img-fluid {
-    width:100%;
-    height: auto;
-  }
   
+
   .row {
-    
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .grid-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -31,6 +36,7 @@
   #hero {
     background-attachment: fixed;
   }
+ 
 }
 
 @media (max-width: 768px) {
@@ -43,5 +49,11 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+  .skils-bar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
